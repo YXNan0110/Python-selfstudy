@@ -19,10 +19,10 @@ eg:print('hello,', name)<br>
 -%f 浮点数（小数）   
 -%s 字符串    
 -%x 十六进制整数    
+
 例如：保留两位小数.2f<br>
 
 ### list 和 tuple
-
 **list**用**中括号**，list索引从0开始，并且用中括号表示第几位，若倒数第几位则加负号<br>
 list**追加元素**用.append，**插入元素**用.insert，删除元素用.pop(i)<br>
 eg:classmate[0],classmate[2][2],classmate[-1]<br>
