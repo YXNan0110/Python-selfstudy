@@ -1,4 +1,4 @@
-# life-in-BJ
+# Python-selfstudy
 ## Python学习笔记  
 ### 输入和输出  
 
