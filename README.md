@@ -80,6 +80,11 @@ insinstance(xxx,Iterable)会输出True/False<br>
 **下标循环**可以用**enumerate**，把list变成**索引-元素对**的形式<br>
 eg:for i, value in enumerate(['A','B','C'])<br>
 
+### 列表生成式
+中括号中依次放入**输出结果**，**循环式**，**条件判断**<br>
+eg:[k + '=' + v for k, v in d.items()]<br>
+列表生成式中的if语句**不能**带else，但如果if语句**在循环式之前**，必须要加else，否则无法判断x结果输出给for循环<br>
+
 
 
 
