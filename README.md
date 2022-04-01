@@ -40,8 +40,10 @@ eg:单元素t = (1,)<br>
 
 ### dict 和 set
 dict和set都是一组key的集合<br>
-**dict**用大括号表示，格式为索引：内容<br>
+**dict**用大括号表示，格式为索引:内容（即key:value）<br>
 如果要查找需要d[]，中括号中为索引<br>
+注意，dict中的索引（即key）是无序排列的<br>
+
 **set**是数学意义上无序和无重复元素的集合，set()<br>
 
 ### 定义函数
@@ -69,6 +71,14 @@ import xxx,函数包.函数<br>
 **中间用冒号隔开**<br>
 字符串也可以用切片<br>但必须要用中括号<br>
 就算是倒数第几个数切的方式也是正数的<br>
+
+### 迭代
+**for...in**<br>
+dict默认迭代key，迭代**value**要用**for value in d.values()**,同时迭代用**d.items()**<br>
+判断是否可迭代，需要用**from collections.abc import Iterable**<br>
+insinstance(xxx,Iterable)会输出True/False<br>
+**下标循环**可以用**enumerate**，把list变成**索引-元素对**的形式<br>
+eg:for i, value in enumerate(['A','B','C'])<br>
 
 
 
