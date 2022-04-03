@@ -85,6 +85,11 @@ eg:for i, value in enumerate(['A','B','C'])<br>
 eg:[k + '=' + v for k, v in d.items()]<br>
 列表生成式中的if语句**不能**带else，但如果if语句**在循环式之前**，必须要加else，否则无法判断x结果输出给for循环<br>
 
+### 生成器
+只需要把列表生成式的中括号改为**小括号**即可，eg:g=(x * x for x in range(10))<br>
+生成器generator也是可迭代对象，可以用for...in，也可以用**next函数**调用下一个<br>
+generator函数中包含**yield**关键字，相当于普通函数中的return返回，再次执行时从上次返回的语句处执行，再通过**next函数**执行，有点像普通函数的print<br>
+
 
 
 
