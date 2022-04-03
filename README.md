@@ -90,6 +90,19 @@ eg:[k + '=' + v for k, v in d.items()]<br>
 生成器generator也是可迭代对象，可以用for...in，也可以用**next函数**调用下一个<br>
 generator函数中包含**yield**关键字，相当于普通函数中的return返回，再次执行时从上次返回的语句处执行，再通过**next函数**执行，有点像普通函数的print<br>
 
+### 迭代器
+判断是否是可迭代对象Iterable可以用**isinstance函数**，eg:insinstance((x for x in range(10)), Iterable)<br>
+**迭代器Iterator**是指可以被next()调用并不断返回下一个值的对象<br>
+Iterator同样也可以用**isinstance函数**判断<br>
+把list、dict、str等*Iterable*变成*Iterator*可以用**iter函数**<br>
+注意：Iterator的计算是**惰性**的，在需要返回下一个数据时才会计算，可以表示无限大的数据流<br>
+凡是可作用于**for循环**的对象都是**Iterable类型**，凡是可作用于**next()函数**的对象都是**Iterator类型**，它们表示一个惰性计算的序列<br>
+
+
+
+
+
+
 
 
 
