@@ -116,7 +116,8 @@ map函数接收两个参数，分别是**函数**和**Iterable**，把结果作�
 同样接收两个参数，分别是函数和序列，把传入的函数依次作用于每个元素，根据返回值0or1决定保留还是舍弃，eg：filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15])<br>
 注意：filter返回的是**Iterator**，需要强迫list函数输出<br>
 
-
+### sorted函数
+sorted函数用于排序，可以输入**一个序列**，也可以输入**序列**和**函数**，函数作用于每一个元素上。eg：sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)<br>
 
 
 
